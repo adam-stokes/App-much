@@ -1,14 +1,14 @@
 # NAME
 
-App::much - It's new $module
+App::much - project creator
 
 # SYNOPSIS
 
-    use App::much;
+    $ much new python
 
 # DESCRIPTION
 
-App::much is ...
+App::much is a project creator for quickly starting projects for Perl, Python, and others. It's powered by an interactive menu and templates.
 
 # LICENSE
 

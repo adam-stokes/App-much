@@ -1,0 +1,53 @@
+#!/usr/bin/env perl
+
+use FindBin;
+use lib "$FindBin::Bin/../lib";
+
+use Modern::Perl;
+use Applify;
+
+documentation __FILE__;
+
+subcommand python => 'Python project' => sub {
+    option bool => force => "Force create files";
+};
+
+sub command_python {
+    my $app    = shift;
+    my $action = shift || 'new';
+    return 0;
+}
+
+
+subcommand perl => 'Perl project' => sub {
+    option bool => force => "Force create files";
+};
+
+sub command_perl {
+    my $app    = shift;
+    my $action = shift || 'new';
+    return 0;
+}
+
+
+app {
+    my $self = shift;
+    return 0;
+};
+
+__END__
+
+=head1 NAME
+
+much - Project create
+
+=head1 SYNOPSIS
+
+    # Create python project
+    $ much new python
+
+=head1 AUTHOR
+
+Adam Stokes - c<adamjs@cpan.org>
+
+=cut

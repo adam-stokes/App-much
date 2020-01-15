@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "project creator",
    "author" : [
       "Adam Stokes <battlemidget@users.noreply.github.com>"
    ],
@@ -42,7 +42,8 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008001"
+            "App::Cmd" : "0",
+            "Mojolicious" : "0"
          }
       },
       "test" : {
@@ -52,6 +53,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/battlemidget/App-much/issues"
+      },
+      "homepage" : "https://github.com/battlemidget/App-much",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/battlemidget/App-much.git",
+         "web" : "https://github.com/battlemidget/App-much"
+      }
+   },
    "version" : "0.01",
    "x_serialization_backend" : "JSON::PP version 4.02",
    "x_static_install" : 1
